@@ -13,10 +13,6 @@ public class ItemIdentifier {
     private String description;
     private final ItemType type;
 
-    public ItemIdentifier() {
-        this(ItemType.none);
-    }
-
     public ItemIdentifier(ItemType type) {
         this(++incrementalId, type);
     }

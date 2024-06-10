@@ -10,10 +10,6 @@ public abstract class Item implements Cloneable {
     protected long stock;
     protected float price;
 
-    protected Item() {
-        this(ItemType.none);
-    }
-
     protected Item(Item copy) {
         identifier = new ItemIdentifier(copy.identifier);
         stock = copy.stock;
